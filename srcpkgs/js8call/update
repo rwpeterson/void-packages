@@ -1,0 +1,2 @@
+site="http://files.js8call.com/changelog.txt"
+pattern="<b>\K[\d.]+(?=</b>)"

@@ -1,0 +1,20 @@
+# Template file for 'js8call'
+pkgname=js8call
+version=2.2.0
+revision=1
+build_style=cmake
+configure_args="-DRIGCTLCOM_EXE= -DRIGCTL_EXE= -DRIGCTLD_EXE=
+ -DBoost_INCLUDE_DIR=${XBPS_CROSS_BASE}/usr/include"
+hostmakedepends="pkg-config gcc-fortran ruby-asciidoctor asciidoc tar qt5-qmake
+ qt5-host-tools"
+makedepends="boost-devel fftw-devel libgomp-devel hamlib-devel libusb-devel qt5-devel
+ qt5-multimedia-devel qt5-tools-devel qt5-serialport-devel qt5-plugin-mysql
+ qt5-plugin-odbc qt5-plugin-pgsql qt5-plugin-sqlite qt5-plugin-tds"
+depends="qt5-plugin-sqlite"
+short_desc="Weak signal Amateur Radio communications program"
+maintainer="Bob Peterson <bob@rwp.is>"
+license="GPL-3.0-or-later"
+homepage="http://js8call.com/"
+changelog="http://files.js8call.com/changelog.txt"
+distfiles="http://files.js8call.com/${version}/js8call-${version}.tgz"
+checksum="a831d2947452a1778c6ff9c0962651f7aaeec81dc92923f09bccbc4f18973a91"
